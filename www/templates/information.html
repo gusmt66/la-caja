@@ -1,0 +1,152 @@
+<ion-view view-title="Información Útil">
+  <ion-content class="has-header">
+<!--
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="loadInfo()">
+    </ion-refresher>
+-->
+<div class="scroll-iframe">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182305.88147842654!2d-58.84505680126879!3d-34.42532895722421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c50482ee15f%3A0x24a0e317272e8528!2sSheraton+Pilar+Hotel+%26+Convention+Center!5e0!3m2!1ses!2sve!4v1475874776960" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+      <div class="contenedorlibros topinfo">
+      <ion-list>
+        <!-- <div ng-repeat="item in model.info">
+          <ion-item class="item-stable libros2">
+          <div class="contenedoricono">
+              <img class="taminfo" src="img/{{item.icon_name}}.png">
+              </div>
+
+              <div class="contenedorinfo">
+              <p class="tituloinfo" ng-if="item.title">{{item.title}}</p>
+              <p class="descripcionInfo" ng-class="item.title == '' ? 'paddingtop10' : ''" ng-if="item.description">{{item.description}}</p>
+              <a class="linkInfo" ng-if="item.link" href='{{item.link}}'><i class="ion-ios-arrow-right"></i>  Localizar en Google Maps</a>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item> -->
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+              <img class="taminfo" src="img/ion-ios-calendar-outline.png">
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">22 y 23 de Noviembre</p>
+
+                <a class="linkInfo" href="https://goo.gl/maps/TfAMHe3LfUD2" target="_blank"><i class="ion-ios-arrow-right"></i>  Localizar en Google Maps</a>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+              <img class="taminfo" src="img/ion-ios-location-outline.png">
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Indicaciones para llegar</p>
+                <p class="descripcionInfo" ng-class="item.title == '' ? 'paddingtop10' : ''" >
+                  <strong>Desde General Rodríguez</strong><br>
+                  Siga por la ruta provincial 28 hasta Pilar.<br>
+                  Luego gire a la derecha en la autopista Panamericana hasta el km 49,5. <br>
+                  <br>
+                  <strong>Desde Luján</strong><br>
+                  Siga por la ruta provincial 34 hasta Pilar.<br>
+                  Gire a la derecha y siga por la ruta 9 hasta el km 49,5. <br>
+                  <br>
+                  <strong>Desde Buenos Aires</strong><br>
+                  Siga por la autopista Panamericana hasta el km 32 donde la autopista se divide en dos.<br>
+                  Tome el acceso a Pilar hasta el kilómetro km 49,5. <br>
+
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+                <img class="taminfo" src="img/ion-ios-clock-outline.png">
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Servicios no incluidos</p>
+                <p class="descripcionInfo">
+                    * Room Service<br>
+                    * Bebidas extras que soliciten por fuera del régimen de comidas.<br>
+                    A excepción de las aguas del frigo bar que están incluidas.<br>
+                    * Servicios de lavandería.<br>
+                    * Tratamientos de Spa.<br>
+                    * Llamadas telefónicas.<br>
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+                <!-- <img class="taminfo" src="img/ion-ios-clock-outline.png"> -->
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Estacionamiento</p>
+                <p class="descripcionInfo">
+                    Para los que vienen en auto, el hotel cuenta con estacionamiento cubierto sin costo.
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+                <img class="taminfo" src="img/ion-bowtie.png">
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Vestimenta sugerida</p>
+                <p class="descripcionInfo">
+                    La vestimenta casual es una buena elección para todo el encuentro.<br>
+                    Dado que tendrán la posibilidad de realizar actividades recreativas, es conveniente llevar también zapatillas, ropa deportiva, ojotas y traje de baño.
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+                <!-- <img class="taminfo" src="img/ion-bowtie.png"> -->
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Régimen alimenticio Especial</p>
+                <p class="descripcionInfo">
+                    Si tenés algún régimen alimenticio especial (celíacos, vegetarianos etc), por favor avisar a Raquel Torrens | Int. 7791 | <a href="mailto:torrens@lacaja.com.ar" target="_blank">torrens@lacaja.com.ar</a> de la Dirección de Marketing & CE.
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+
+          <ion-item class="item-stable libros2">
+            <div class="contenedoricono">
+                <!-- <img class="taminfo" src="img/ion-bowtie.png"> -->
+              </div>
+
+              <div class="contenedorinfo">
+                <p class="tituloinfo">Contacto</p>
+                <p class="descripcionInfo">
+                    Para consultas e información hacé <a href="mailto:convencion.dir.comercial.y.dir.marketing.&.ce.2016@lacaja.com.ar" target="_blank">click aquí</a>
+                </p>
+              </div>
+              <div class="clear"></div>
+              <div class="lineaseparadorInfo"></div>
+          </ion-item>
+        <!-- </div> -->
+      </ion-list>
+      </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,8 @@
+{
+  "name": "LaCajaMobile",
+  "app_id": "79c9448e",
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*"
+  ]
+}
